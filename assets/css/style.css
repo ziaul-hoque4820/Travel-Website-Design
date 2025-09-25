@@ -40,6 +40,12 @@ header {
     margin: 0 auto;
 }
 
+header.sticky {
+    padding: 8px 17%;
+    background: transparent;
+    backdrop-filter: blur(35px);
+}
+
 .logo {
     font-size: 33px;
     color: var(--text-color);
@@ -132,13 +138,14 @@ section {
     margin-bottom: 20px;
 }
 
-.home-text p{
+.home-text p {
     font-size: var(--p-font);
     font-weight: 500;
     line-height: 30px;
     color: #ffffff;
     margin-bottom: 35px;
 }
+
 .btn {
     display: inline-block;
     padding: 13px 40px;
@@ -151,7 +158,8 @@ section {
     transition: all .50s ease;
     cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
     transform: translate(10px);
     border: 2px solid var(--text-color);
     background: transparent;
@@ -159,13 +167,40 @@ section {
 }
 
 
-
-
-
-
-
-
-
+/* ---------Feature Section-------- */
+.feature-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+.row-img{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.row-img img{
+    width: 100%;
+    display: block;
+    transition: transform 0.7s ;
+}
+.row-img img:hover{
+    transform: scale(1.2);
+}
+.feature-content h4{
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+.feature-content h4:hover{
+    color: var(--main-color);
+}
 
 
 
