@@ -168,14 +168,15 @@ section {
 
 
 /* ---------Feature Section-------- */
-.feature-content{
+.feature-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     align-items: center;
     text-align: center;
     gap: 3rem;
 }
-.row-img{
+
+.row-img {
     overflow: hidden;
     width: 100px;
     height: 100px;
@@ -184,38 +185,44 @@ section {
     border-radius: 50%;
     cursor: pointer;
 }
-.row-img img{
+
+.row-img img {
     width: 100%;
     display: block;
-    transition: transform 0.7s ;
+    transition: transform 0.7s;
 }
-.row-img img:hover{
+
+.row-img img:hover {
     transform: scale(1.2);
 }
-.feature-content h4{
+
+.feature-content h4 {
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
     transition: all .50s ease;
 }
-.feature-content h4:hover{
+
+.feature-content h4:hover {
     color: var(--main-color);
 }
 
 
 /* --------- Holiday Section-------- */
-.holiday{
+.holiday {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 9rem;
 }
-.holiday-img img{
+
+.holiday-img img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
-.holiday-text h5{
+
+.holiday-text h5 {
     font-size: 22px;
     font-weight: 600;
     color: var(--main-color);
@@ -223,13 +230,15 @@ section {
     letter-spacing: 6px;
     margin-bottom: 20px;
 }
-.holiday-text h2{
+
+.holiday-text h2 {
     font-size: var(--h2-font);
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 25px;
 }
-.holiday-text p{
+
+.holiday-text p {
     font-size: var(--p-font);
     font-weight: 500;
     line-height: 30px;
@@ -237,11 +246,62 @@ section {
     margin-bottom: 35px;
 }
 
+/* --------- Tour Section-------- */
+.center-text {
+    text-align: center;
+}
 
+.center-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 800;
+}
 
+.tour-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
 
+.box {
+    position: relative;
+}
 
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(70%);
+    transition: all .3s cubic-bezier(.499, .05, .55, .95);
+    will-change: filter;
+    display: block;
+}
 
+.box img:hover {
+    filter: brightness(90%) hue-rotate(50deg);
+    transform: scale(1.04);
+    cursor: pointer;
+}
 
+.box h6 {
+    position: absolute;
+    left: 25px;
+    bottom: 95px;
+    font-size: 18px;
+    font-weight: 500;
+}
 
+.box h4 {
+    position: absolute;
+    left: 25px;
+    bottom: 65px;
+    font-size: 20px;
+    font-weight: 700;
+}
 
+.center-btn {
+    align-items: center;
+    margin-top: 4rem;
+}
